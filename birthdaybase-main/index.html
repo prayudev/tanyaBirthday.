@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="google-site-verification" content="ABC12345xyz...." />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Happy Birthday Tanya🎉 | Made by Prince</title>
+	<meta name="description" content="A surprise birthday website built by Ravi Raj using HTML, CSS, and JavaScript. Celebrate a special day with animations, music, and warm wishes.">
+        <meta name="keywords" content="birthday, Prayu, Prayu Birthday, Prayu, birthday card, online birthday wish, birthday website, happy birthday, virtual birthday, prayudev, HTML CSS JS birthday project" />
+  	<meta name="author" content="Ayush" />
+ 	<meta name="twitter:card" content="summary_large_image" />
+  
+        <link rel="icon" href="https://static.vecteezy.com/system/resources/previews/011/766/183/original/initial-letter-ap-logo-ap-stock-letter-logo-design-pro-template-vector.jpg" />
+	<meta property="og:title" content="Happy Birthday 🎉 | Made by Ayush" />
+  	<meta property="og:description" content="Click here to open a beautiful birthday surprise website filled with love, music, and joy!" />
+  	<meta property="og:url" content="https://prayudev.github.io/birthdaybase/" />
+  	<meta property="og:type" content="website" />
+  	<meta property="og:image" content="https://static.vecteezy.com/system/resources/previews/011/766/183/original/initial-letter-ap-logo-ap-stock-letter-logo-design-pro-template-vector.jpg" />
+	
+	<link rel="stylesheet" href="css/main.css">
+	<script src="libs/gsap/gsap.min.js" defer></script>
+	<script src="libs/gsap/ScrollTrigger.min.js" defer></script>
+	<script src="libs/gsap/ScrollSmoother.min.js" defer></script>
+
+	<script src="js/app.js" defer></script>
+
+</head>
+<body>
+
+	<div class="wrapper">
+		<div class="content">
+
+			<header class="main-header">
+				<div class="layers">
+					<div class="layer__header">
+						<div class="layers__caption">Happy Birthday</div>
+						<div class="layers__title">Tanya</div>
+					</div>
+					<div class="layer layers__base" style="background-image: url(img/balloon.jpg);"></div>
+					<div class="layer layers__middle" style="background-image: url(img/layer-middle.png);"></div>
+					<div class="layer layers__front" style="background-image: url(img/layer-front.png);"></div>
+				</div>
+			</header>
+		
+			<article class="main-article" style="background-image: url(https://static.vecteezy.com/system/resources/previews/002/034/038/large_2x/luxury-gold-and-black-balloon-background-3d-rendering-with-cylynder-podium-black-friday-minimal-rendered-scene-3d-with-golden-podium-platform-stand-to-show-product-stage-showcase-background-vector.jpg);">
+				<div class="main-article__content">
+					<h2 class="main-article__header">To be continued</h2>
+					<p class="main-article__paragraph" style="font-size: 1.5rem; line-height: 1.8;">
+						<br>
+<br>You've made it this far! Ready for the grand reveal? 🎉 Click the button below and enter the secret password to unlock your special birthday surprise! 🎁
+					  </p>
+					  
+					<div class="button">
+						<a href="" onclick="checkPassword(event)">
+							<button class="birthday-btn">Click</button>
+						  </a>
+						  
+					</div>
+				</div>
+				<div class="copy">© prince</div>
+			</article>
+
+		</div>
+	</div>
+	<script>
+		function checkPassword(event) {
+  event.preventDefault();
+
+  const password = prompt("🎁 Enter the secret password to continue: tanya111225");
+  const correctPassword = "tanya111225"; // you can change this
+
+  if (password === correctPassword) {
+    // Redirect to a new page
+    window.location.href = "scroll.html"; // change this to your actual page
+  } else if (password === null) {
+    alert("❌ Action canceled.");
+  } else {
+    alert("❌ Incorrect password. Try again!");
+  }
+}
+
+ </script>
+	  
+</body>
+</html>
